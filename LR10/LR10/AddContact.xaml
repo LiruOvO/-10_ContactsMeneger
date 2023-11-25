@@ -1,0 +1,33 @@
+﻿<Window x:Class="LR10.AddContact"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LR10"
+        mc:Ignorable="d"
+        Title="AddContact" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Додавання контакту" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="25" FontFamily="Impact"/>
+        <Button Content="Додати" Height="40" Width="100" FontFamily="Impact" FontSize="17" VerticalAlignment="Bottom" HorizontalAlignment="Center" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Foreground="White" Click="Button_Click"/>
+        <Rectangle VerticalAlignment="Center" HorizontalAlignment="Center" Height="300" Width="600" Fill="#FFF7F7F7"/>
+        <CheckBox x:Name="check2" Margin="428,83,324,303" Checked="check2_Checked" />
+        <CheckBox x:Name="check1" Margin="116,83,638,303" Checked="check1_Checked" />
+        <Label Content="Персональний контакт" FontFamily="Impact" FontSize="19" Margin="136,73,377,303"  />
+        <Label Content="Бізнес контакт" FontFamily="Impact" FontSize="19" Margin="481,73,83,303" />
+        <Label Content="Ім'я" HorizontalAlignment="Left" Margin="125,128,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Impact"/>
+        <Label Content="Фамілія" HorizontalAlignment="Left" Margin="125,153,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Impact"/>
+        <Label Content="Номер телефону" HorizontalAlignment="Left" Margin="125,183,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Impact"/>
+        <Label Content="Gmail" HorizontalAlignment="Left" Margin="125,217,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Impact"/>
+        <Label x:Name="text1" Content="Дата народження" HorizontalAlignment="Left" Margin="132,281,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Impact" Visibility="Collapsed"/>
+        <Label x:Name="text2" Content="Адреса" HorizontalAlignment="Left" Margin="132,315,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Impact" Visibility="Collapsed"/>
+        <TextBox x:Name="Name" HorizontalAlignment="Left" Margin="320,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="252"/>
+        <TextBox x:Name="Surname" HorizontalAlignment="Left" Margin="320,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="252"/>
+        <TextBox x:Name="Phone" HorizontalAlignment="Left" Margin="320,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="252" TextChanged="Phone_TextChanged"/>
+        <TextBox x:Name="Gmail" HorizontalAlignment="Left" Margin="320,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="252" TextChanged="Gmail_TextChanged"/>
+        <TextBox x:Name="CompanyName" HorizontalAlignment="Left" Margin="320,289,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="252" Visibility="Collapsed"/>
+        <TextBox x:Name="AdressPosition" HorizontalAlignment="Left" Margin="320,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="252" Visibility="Collapsed"/>
+        <DatePicker x:Name="BirthData" HorizontalAlignment="Left" Margin="320,289,0,0" VerticalAlignment="Top" Width="252" Visibility="Collapsed"/>
+
+    </Grid>
+</Window>
